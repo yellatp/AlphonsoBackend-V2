@@ -1,0 +1,60 @@
+application:
+  name: User-Service
+
+server:
+  port: 8080
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: narisetty.mahadesh4@gmail.com
+    password: fkbr hhfs hsxo jnge   # Gmail App Password (NOT your actual password)
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/authd?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: Root@123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+
+jwt:
+  secret: "OiMCzAPhcY3M3kA6hHz8G2e7UdvqGfDlYo9gEyltr9Q"   # dev-only; DON'T use in production
+  expiration: 86400000                               # 1 day
+
+google:
+  client-ids: "413293547363-ff4mo2c13lpr65kd18fefk3proscobng.apps.googleusercontent.com,1042711886427-2gjsjkap7mcd7o9admgmqjab3eg4c0h2.apps.googleusercontent.com"
+
+otp:
+  length: 6
+  expiry-minutes: 1
+  max-attempts: 5
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: false  # Use hostname instead of IP to avoid wrong IP issues
+    hostname: localhost         # Explicitly set hostname

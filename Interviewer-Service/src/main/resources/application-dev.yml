@@ -1,0 +1,60 @@
+spring:
+  application:
+    name: Interviewer-Service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/Interviewer?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: Root@123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: narisetty.mahadesh4@gmail.com
+    password: fkbr hhfs hsxo jnge   # Gmail App Password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8083
+
+jwt:
+  secret: "OiMCzAPhcY3M3kA6hHz8G2e7UdvqGfDlYo9gEyltr9Q"
+  expiration-ms: 86400000   # 1 day
+
+# NOTE: google section is SAFE to keep — only client-id remains, no Calendar.
+google:
+  client-id: "413293547363-ff4mo2c13lpr65kd18fefk3proscobng.apps.googleusercontent.com"
+
+# Your Jitsi base URL
+jit:
+  base-url: "https://meet.jit.si"
+
+otp:
+  length: 6
+  expiry-minutes: 1
+  max-attempts: 5
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
