@@ -1,0 +1,2500 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.alphonso:MoodleService >---------------------
+[INFO] Building MoodleService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.7:run (default-cli) > test-compile @ MoodleService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ MoodleService ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ MoodleService ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ MoodleService ---
+[INFO] skip non existing resourceDirectory /Users/srinivas/Documents/chanduAnna/AlphonsoBackend-V2/Moodle&EmployerService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ MoodleService ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.7:run (default-cli) < test-compile @ MoodleService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.7:run (default-cli) @ MoodleService ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2026-01-28T01:38:02.533+05:30  INFO 41479 --- [moodle-service] [  restartedMain] c.a.m.Moodle_EmployerServiceApplication  : Starting Moodle_EmployerServiceApplication using Java 23.0.2 with PID 41479 (/Users/srinivas/Documents/chanduAnna/AlphonsoBackend-V2/Moodle&EmployerService/target/classes started by srinivas in /Users/srinivas/Documents/chanduAnna/AlphonsoBackend-V2/Moodle&EmployerService)
+2026-01-28T01:38:02.534+05:30  INFO 41479 --- [moodle-service] [  restartedMain] c.a.m.Moodle_EmployerServiceApplication  : The following 1 profile is active: "dev"
+2026-01-28T01:38:02.575+05:30  INFO 41479 --- [moodle-service] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-28T01:38:02.575+05:30  INFO 41479 --- [moodle-service] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-28T01:38:03.067+05:30  INFO 41479 --- [moodle-service] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-28T01:38:03.170+05:30  INFO 41479 --- [moodle-service] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 13 JPA repository interfaces.
+2026-01-28T01:38:03.348+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=33bb6a82-70fd-3052-95dc-44afc5672a45
+2026-01-28T01:38:03.620+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-01-28T01:38:03.628+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-28T01:38:03.629+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-01-28T01:38:03.648+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-28T01:38:03.648+05:30  INFO 41479 --- [moodle-service] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1073 ms
+2026-01-28T01:38:03.745+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-28T01:38:03.777+05:30  INFO 41479 --- [moodle-service] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-01-28T01:38:03.801+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-28T01:38:03.932+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-28T01:38:03.945+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-28T01:38:04.048+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@108792ff
+2026-01-28T01:38:04.050+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-28T01:38:04.081+05:30  WARN 41479 --- [moodle-service] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-28T01:38:04.082+05:30  WARN 41479 --- [moodle-service] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-01-28T01:38:04.090+05:30  INFO 41479 --- [moodle-service] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-28T01:38:04.681+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-28T01:38:04.888+05:30  INFO 41479 --- [moodle-service] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-28T01:38:05.161+05:30  WARN 41479 --- [moodle-service] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-28T01:38:05.179+05:30  WARN 41479 --- [moodle-service] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-01-28T01:38:05.241+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'Profile-Service' URL not provided. Will try picking an instance via load-balancing.
+2026-01-28T01:38:05.274+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'Interviewer-Service' URL not provided. Will try picking an instance via load-balancing.
+2026-01-28T01:38:05.302+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-28T01:38:06.029+05:30  WARN 41479 --- [moodle-service] [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 00df6161-305b-4e3d-a579-5b466a9c83e2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-28T01:38:06.034+05:30  INFO 41479 --- [moodle-service] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-01-28T01:38:06.372+05:30  INFO 41479 --- [moodle-service] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-01-28T01:38:06.388+05:30  WARN 41479 --- [moodle-service] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-28T01:38:06.407+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-28T01:38:06.421+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-28T01:38:06.423+05:30  INFO 41479 --- [moodle-service] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T01:38:06.427+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-28T01:38:06.427+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-28T01:38:06.427+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-28T01:38:06.427+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-28T01:38:06.427+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-28T01:38:06.427+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-01-28T01:38:06.427+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-28T01:38:06.657+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-28T01:38:06.658+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-01-28T01:38:06.659+05:30  INFO 41479 --- [moodle-service] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-28T01:38:06.660+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1769544486659 with initial instances count: 2
+2026-01-28T01:38:06.663+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MOODLE-SERVICE with eureka with status UP
+2026-01-28T01:38:06.663+05:30  INFO 41479 --- [moodle-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1769544486663, current=UP, previous=STARTING]
+2026-01-28T01:38:06.664+05:30  INFO 41479 --- [moodle-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MOODLE-SERVICE/10.84.240.145:moodle-service:8082: registering service...
+2026-01-28T01:38:06.673+05:30  INFO 41479 --- [moodle-service] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2026-01-28T01:38:06.673+05:30  INFO 41479 --- [moodle-service] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-01-28T01:38:06.683+05:30  INFO 41479 --- [moodle-service] [  restartedMain] c.a.m.Moodle_EmployerServiceApplication  : Started Moodle_EmployerServiceApplication in 4.405 seconds (process running for 4.733)
+2026-01-28T01:38:06.690+05:30  INFO 41479 --- [moodle-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MOODLE-SERVICE/10.84.240.145:moodle-service:8082 - registration status: 204
+2026-01-28T01:43:06.461+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T01:45:00.050+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Starting syncMoodleAttempts job ===
+Hibernate: 
+    select
+        mp1_0.moodle_user_id 
+    from
+        moodle_profile_users mp1_0 
+    where
+        mp1_0.status=?
+2026-01-28T01:45:00.370+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Found 0 Moodle user IDs with QUIZ_COMPLETED status
+2026-01-28T01:45:00.370+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : No users to sync attempts for. Exiting syncMoodleAttempts job.
+2026-01-28T01:45:00.371+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Starting syncCoursesWithCategoryCohort job ===
+2026-01-28T01:45:07.476+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Retrieved 18 courses from Moodle
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.574+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Flask Introduction' (ID: 9) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.577+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'JavaScript Fundamentals' (ID: 10) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.580+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'React Development' (ID: 11) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.582+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Angular Advanced' (ID: 12) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.584+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Node.js Fundamentals' (ID: 13) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.586+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Docker Introduction' (ID: 14) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.588+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Kubernetes Advanced' (ID: 15) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.590+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'AWS Cloud Essentials' (ID: 16) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.593+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Azure Cloud Introduction' (ID: 17) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.595+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Assessment Host Course' (ID: 18) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.597+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'TestingAlphonso' (ID: 19) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.599+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Java Fundamentals' (ID: 2) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.601+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Spring Boot Advanced' (ID: 3) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.603+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Devops Introduction' (ID: 4) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.605+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Hibernate Advanced' (ID: 5) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.607+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Selenium Automation' (ID: 6) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.609+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Python Fundamentals' (ID: 7) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T01:45:07.610+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Django Advanced' (ID: 8) already mapped with cohort. Skipping.
+2026-01-28T01:45:07.610+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Completed syncCoursesWithCategoryCohort job - Success: 0, Skipped: 18, Failed: 0, Total: 18 ===
+2026-01-28T01:48:06.493+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T01:53:06.524+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T01:58:06.532+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T02:00:00.026+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Starting syncMoodleAttempts job ===
+Hibernate: 
+    select
+        mp1_0.moodle_user_id 
+    from
+        moodle_profile_users mp1_0 
+    where
+        mp1_0.status=?
+2026-01-28T02:00:00.305+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Found 0 Moodle user IDs with QUIZ_COMPLETED status
+2026-01-28T02:00:00.306+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : No users to sync attempts for. Exiting syncMoodleAttempts job.
+2026-01-28T02:00:00.308+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Starting syncCoursesWithCategoryCohort job ===
+2026-01-28T02:00:06.957+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Retrieved 18 courses from Moodle
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.024+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Flask Introduction' (ID: 9) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.028+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'JavaScript Fundamentals' (ID: 10) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.037+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'React Development' (ID: 11) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.042+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Angular Advanced' (ID: 12) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.045+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Node.js Fundamentals' (ID: 13) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.048+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Docker Introduction' (ID: 14) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.050+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Kubernetes Advanced' (ID: 15) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.058+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'AWS Cloud Essentials' (ID: 16) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.061+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Azure Cloud Introduction' (ID: 17) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.064+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Assessment Host Course' (ID: 18) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.066+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'TestingAlphonso' (ID: 19) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.068+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Java Fundamentals' (ID: 2) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.071+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Spring Boot Advanced' (ID: 3) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.075+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Devops Introduction' (ID: 4) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.077+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Hibernate Advanced' (ID: 5) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.080+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Selenium Automation' (ID: 6) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.083+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Python Fundamentals' (ID: 7) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:00:07.087+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Django Advanced' (ID: 8) already mapped with cohort. Skipping.
+2026-01-28T02:00:07.087+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Completed syncCoursesWithCategoryCohort job - Success: 0, Skipped: 18, Failed: 0, Total: 18 ===
+2026-01-28T02:03:06.534+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T02:08:06.590+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T02:11:19.909+05:30  INFO 41479 --- [moodle-service] [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-28T02:11:19.911+05:30  INFO 41479 --- [moodle-service] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-28T02:11:19.978+05:30  INFO 41479 --- [moodle-service] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 65 ms
+[ROLE_CANDIDATE]
+Hibernate: 
+    select
+        aacv1_0.category_score_id,
+        aacv1_0.attempt_date,
+        aacv1_0.attempt_id,
+        aacv1_0.category_id,
+        aacv1_0.category_name,
+        aacv1_0.earned,
+        aacv1_0.email,
+        aacv1_0.moodle_user_id,
+        aacv1_0.percentage,
+        aacv1_0.possible,
+        aacv1_0.profile_id,
+        aacv1_0.question_count,
+        aacv1_0.moodle_quiz_id,
+        aacv1_0.score 
+    from
+        v_assessment_attempt_category aacv1_0 
+    where
+        upper(aacv1_0.email)=upper(?)
+2026-01-28T02:13:06.602+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T02:15:00.043+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Starting syncMoodleAttempts job ===
+Hibernate: 
+    select
+        mp1_0.moodle_user_id 
+    from
+        moodle_profile_users mp1_0 
+    where
+        mp1_0.status=?
+2026-01-28T02:15:00.186+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Found 0 Moodle user IDs with QUIZ_COMPLETED status
+2026-01-28T02:15:00.186+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : No users to sync attempts for. Exiting syncMoodleAttempts job.
+2026-01-28T02:15:00.191+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Starting syncCoursesWithCategoryCohort job ===
+2026-01-28T02:15:07.978+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Retrieved 18 courses from Moodle
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.039+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Flask Introduction' (ID: 9) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.045+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'JavaScript Fundamentals' (ID: 10) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.050+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'React Development' (ID: 11) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.057+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Angular Advanced' (ID: 12) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.066+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Node.js Fundamentals' (ID: 13) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.070+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Docker Introduction' (ID: 14) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.072+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Kubernetes Advanced' (ID: 15) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.077+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'AWS Cloud Essentials' (ID: 16) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.080+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Azure Cloud Introduction' (ID: 17) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.083+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Assessment Host Course' (ID: 18) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.086+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'TestingAlphonso' (ID: 19) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.089+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Java Fundamentals' (ID: 2) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.091+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Spring Boot Advanced' (ID: 3) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.094+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Devops Introduction' (ID: 4) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.096+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Hibernate Advanced' (ID: 5) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.099+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Selenium Automation' (ID: 6) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.101+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Python Fundamentals' (ID: 7) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:15:08.103+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Django Advanced' (ID: 8) already mapped with cohort. Skipping.
+2026-01-28T02:15:08.103+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Completed syncCoursesWithCategoryCohort job - Success: 0, Skipped: 18, Failed: 0, Total: 18 ===
+2026-01-28T02:18:06.605+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[ROLE_CANDIDATE]
+Hibernate: 
+    select
+        aacv1_0.category_score_id,
+        aacv1_0.attempt_date,
+        aacv1_0.attempt_id,
+        aacv1_0.category_id,
+        aacv1_0.category_name,
+        aacv1_0.earned,
+        aacv1_0.email,
+        aacv1_0.moodle_user_id,
+        aacv1_0.percentage,
+        aacv1_0.possible,
+        aacv1_0.profile_id,
+        aacv1_0.question_count,
+        aacv1_0.moodle_quiz_id,
+        aacv1_0.score 
+    from
+        v_assessment_attempt_category aacv1_0 
+    where
+        upper(aacv1_0.email)=upper(?)
+2026-01-28T02:23:06.674+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[ROLE_CANDIDATE]
+Hibernate: 
+    select
+        aacv1_0.category_score_id,
+        aacv1_0.attempt_date,
+        aacv1_0.attempt_id,
+        aacv1_0.category_id,
+        aacv1_0.category_name,
+        aacv1_0.earned,
+        aacv1_0.email,
+        aacv1_0.moodle_user_id,
+        aacv1_0.percentage,
+        aacv1_0.possible,
+        aacv1_0.profile_id,
+        aacv1_0.question_count,
+        aacv1_0.moodle_quiz_id,
+        aacv1_0.score 
+    from
+        v_assessment_attempt_category aacv1_0 
+    where
+        upper(aacv1_0.email)=upper(?)
+2026-01-28T02:28:06.787+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T02:30:00.043+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Starting syncMoodleAttempts job ===
+Hibernate: 
+    select
+        mp1_0.moodle_user_id 
+    from
+        moodle_profile_users mp1_0 
+    where
+        mp1_0.status=?
+2026-01-28T02:30:00.445+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Found 0 Moodle user IDs with QUIZ_COMPLETED status
+2026-01-28T02:30:00.446+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : No users to sync attempts for. Exiting syncMoodleAttempts job.
+2026-01-28T02:30:00.450+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Starting syncCoursesWithCategoryCohort job ===
+2026-01-28T02:30:09.705+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Retrieved 18 courses from Moodle
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.767+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Flask Introduction' (ID: 9) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.772+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'JavaScript Fundamentals' (ID: 10) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.778+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'React Development' (ID: 11) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.782+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Angular Advanced' (ID: 12) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.799+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Node.js Fundamentals' (ID: 13) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.802+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Docker Introduction' (ID: 14) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.814+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Kubernetes Advanced' (ID: 15) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.816+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'AWS Cloud Essentials' (ID: 16) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.819+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Azure Cloud Introduction' (ID: 17) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.821+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Assessment Host Course' (ID: 18) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.823+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'TestingAlphonso' (ID: 19) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.826+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Java Fundamentals' (ID: 2) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.827+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Spring Boot Advanced' (ID: 3) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.829+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Devops Introduction' (ID: 4) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.831+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Hibernate Advanced' (ID: 5) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.833+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Selenium Automation' (ID: 6) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.835+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Python Fundamentals' (ID: 7) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:30:09.837+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Django Advanced' (ID: 8) already mapped with cohort. Skipping.
+2026-01-28T02:30:09.837+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Completed syncCoursesWithCategoryCohort job - Success: 0, Skipped: 18, Failed: 0, Total: 18 ===
+2026-01-28T02:33:06.804+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T02:38:06.891+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T02:43:06.934+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T02:45:00.010+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Starting syncMoodleAttempts job ===
+Hibernate: 
+    select
+        mp1_0.moodle_user_id 
+    from
+        moodle_profile_users mp1_0 
+    where
+        mp1_0.status=?
+2026-01-28T02:45:00.597+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Found 0 Moodle user IDs with QUIZ_COMPLETED status
+2026-01-28T02:45:00.598+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : No users to sync attempts for. Exiting syncMoodleAttempts job.
+2026-01-28T02:45:00.600+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Starting syncCoursesWithCategoryCohort job ===
+2026-01-28T02:45:07.169+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Retrieved 18 courses from Moodle
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.235+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Flask Introduction' (ID: 9) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.244+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'JavaScript Fundamentals' (ID: 10) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.247+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'React Development' (ID: 11) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.263+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Angular Advanced' (ID: 12) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.268+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Node.js Fundamentals' (ID: 13) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.271+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Docker Introduction' (ID: 14) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.274+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Kubernetes Advanced' (ID: 15) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.283+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'AWS Cloud Essentials' (ID: 16) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.286+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Azure Cloud Introduction' (ID: 17) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.287+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Assessment Host Course' (ID: 18) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.290+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'TestingAlphonso' (ID: 19) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.291+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Java Fundamentals' (ID: 2) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.294+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Spring Boot Advanced' (ID: 3) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.296+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Devops Introduction' (ID: 4) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.298+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Hibernate Advanced' (ID: 5) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.301+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Selenium Automation' (ID: 6) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.303+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Python Fundamentals' (ID: 7) already mapped with cohort. Skipping.
+Hibernate: 
+    select
+        ce1_0.id,
+        ce1_0.category_id,
+        ce1_0.created_at,
+        ce1_0.full_name,
+        ce1_0.last_synced,
+        ce1_0.moodle_course_id,
+        ce1_0.short_name,
+        ce1_0.summary,
+        ce1_0.visible 
+    from
+        courses ce1_0 
+    where
+        ce1_0.moodle_course_id=?
+Hibernate: 
+    select
+        mcme1_0.id 
+    from
+        moodle_course_mapping mcme1_0 
+    where
+        mcme1_0.moodle_course_id=? 
+    limit
+        ?
+2026-01-28T02:45:07.311+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : Course 'Django Advanced' (ID: 8) already mapped with cohort. Skipping.
+2026-01-28T02:45:07.311+05:30  INFO 41479 --- [moodle-service] [   scheduling-1] c.a.m.M.Schedular.MoodleSyncService      : === Completed syncCoursesWithCategoryCohort job - Success: 0, Skipped: 18, Failed: 0, Total: 18 ===
+2026-01-28T02:48:06.956+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T02:53:07.005+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-28T02:58:07.017+05:30  INFO 41479 --- [moodle-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

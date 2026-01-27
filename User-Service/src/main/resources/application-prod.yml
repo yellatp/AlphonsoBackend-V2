@@ -1,0 +1,42 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none        # Prevent schema auto-update in prod
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: false
+
+  mail:
+    host: ${MAIL_HOST}                  # e.g., email-smtp.us-east-1.amazonaws.com (for AWS SES)
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME}          # Your verified SES SMTP username
+    password: ${MAIL_PASSWORD}          # Your verified SES SMTP password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+jwt:
+  secret: ${JWT_SECRET}                  # Store securely (AWS Secrets Manager, Vault, etc.)
+  expiration-ms: ${JWT_EXPIRATION_MS:86400000}  # Default 1 day
+
+google:
+  client-ids: ${GOOGLE_CLIENT_IDS}       # Comma-separated Google OAuth client IDs
+
+otp:
+  length: ${OTP_LENGTH:6}
+  expiry-minutes: ${OTP_EXPIRY_MINUTES:5}
+  max-attempts: ${OTP_MAX_ATTEMPTS:5}
