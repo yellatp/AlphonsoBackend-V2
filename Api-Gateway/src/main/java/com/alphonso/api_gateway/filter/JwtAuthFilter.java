@@ -53,46 +53,54 @@ public class JwtAuthFilter extends AbstractGatewayFilterFactory<JwtAuthFilter.Co
                 
                 // Extract email from subject claim
                 String email = claims.getSubject();
-                
-                // Log all claims for debugging
-                log.info("JWT Token parsed successfully");
-                log.info("  - Subject (getSubject()): {}", email);
-                log.info("  - All claims keys: {}", claims.keySet());
-                log.info("  - UID: {}", claims.get("uid", Long.class));
-                log.info("  - Roles: {}", claims.get("roles"));
-                log.info("  - FirstName: {}", claims.get("firstName", String.class));
-                
-                // Try alternative ways to get email if subject is null
                 if (email == null || email.isEmpty()) {
-                    // Try getting from claims map directly
                     Object subClaim = claims.get("sub");
                     if (subClaim != null) {
                         email = subClaim.toString();
-                        log.warn("Subject was null, but found 'sub' claim: {}", email);
-                    } else {
-                        log.error("JWT token missing subject claim (email). All claims: {}", claims);
-                        exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
-                        return exchange.getResponse().setComplete();
                     }
                 }
-                
-                // Final validation
                 if (email == null || email.isEmpty()) {
-                    log.error("JWT token missing email after all attempts. Claims: {}", claims);
+                    log.error("JWT token missing subject (email). All claims: {}", claims.keySet());
                     exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
                     return exchange.getResponse().setComplete();
                 }
 
+                // Safely extract uid (JWT may store as Long, Integer, or Number)
+                Long uid = null;
+                Object uidObj = claims.get("uid");
+                if (uidObj instanceof Number) {
+                    uid = ((Number) uidObj).longValue();
+                } else if (uidObj != null) {
+                    try {
+                        uid = Long.valueOf(uidObj.toString());
+                    } catch (NumberFormatException ignored) {
+                        uid = null;
+                    }
+                }
+                if (uid == null) {
+                    log.error("JWT token missing or invalid 'uid' claim. All claims: {}", claims.keySet());
+                    exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+                    return exchange.getResponse().setComplete();
+                }
+
+                String firstName = claims.get("firstName", String.class);
+                if (firstName == null) {
+                    firstName = "";
+                }
+                String rolesHeader = String.join(",", jwtUtil.extractRoles(token));
+
+                log.info("JWT Token parsed successfully - Subject: {}, UID: {}", email, uid);
+
                 ServerWebExchange modifiedExchange = exchange.mutate()
                         .request(exchange.getRequest().mutate()
-                                .header("X-User-Id", String.valueOf(claims.get("uid", Long.class)))
+                                .header("X-User-Id", String.valueOf(uid))
                                 .header("X-Email", email)
-                                .header("X-First-Name", claims.get("firstName", String.class) != null ? claims.get("firstName", String.class) : "")
-                                .header("X-Roles", String.join(",", jwtUtil.extractRoles(token)))
+                                .header("X-First-Name", firstName)
+                                .header("X-Roles", rolesHeader)
                                 .build())
                         .build();
                 
-                log.debug("Added headers - X-Email: {}, X-User-Id: {}", email, claims.get("uid", Long.class));
+                log.debug("Added headers - X-Email: {}, X-User-Id: {}", email, uid);
                 
                 return chain.filter(modifiedExchange);
 

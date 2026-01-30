@@ -53,8 +53,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
   instance:
-    prefer-ip-address: false
-    hostname: localhost
+    prefer-ip-address: true
 
 # ✅ Resilience4j Circuit Breaker + Retry Configuration
 resilience4j:

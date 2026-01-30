@@ -50,7 +50,19 @@ public class OtpService implements IOtpService{
     public void createAndSendOtp(String universityEmail, String roles) {
         log.info("Initiating OTP creation for university email: {}", universityEmail);
 
-        if (roles.equalsIgnoreCase("CANDIDATE")) {
+        // Check if roles contains CANDIDATE (handles null, single role, or comma-separated roles)
+        boolean isCandidate = false;
+        if (roles != null && !roles.trim().isEmpty()) {
+            String[] roleArray = roles.split(",");
+            for (String role : roleArray) {
+                if (role.trim().equalsIgnoreCase("CANDIDATE")) {
+                    isCandidate = true;
+                    break;
+                }
+            }
+        }
+        
+        if (isCandidate) {
         	 // Allow both .edu domains and gmail.com for university email
         	 if (universityEmail == null || !(universityEmail.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.edu$") 
         	     || universityEmail.matches("^[A-Za-z0-9+_.-]+@gmail\\.com$"))) {

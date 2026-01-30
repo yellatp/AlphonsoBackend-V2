@@ -1,0 +1,176 @@
+version: '3.8'
+
+services:
+  # MySQL Database
+  mysql:
+    image: mysql:8.0
+    container_name: alphonso-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: authd
+      MYSQL_USER: alphonso
+      MYSQL_PASSWORD: alphonso123
+    ports:
+      - "3307:3306"  # Use port 3307 on host to avoid conflict with existing MySQL
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./create-databases.sql:/docker-entrypoint-initdb.d/01-create-databases.sql:ro
+    networks:
+      - backend-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-prootpassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    command: --default-authentication-plugin=mysql_native_password
+
+  # Service Registry (Eureka) - Must start first
+  service-registry:
+    build:
+      context: ./Service-Registery
+      dockerfile: Dockerfile
+    container_name: alphonso-service-registry
+    ports:
+      - "8761:8761"
+    networks:
+      - backend-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:8761"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  # User Service
+  user-service:
+    build:
+      context: ./User-Service
+      dockerfile: Dockerfile
+    container_name: alphonso-user-service
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/authd?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: rootpassword
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://service-registry:8761/eureka
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+      SPRING_PROFILES_ACTIVE: dev
+    networks:
+      - backend-network
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+      service-registry:
+        condition: service_healthy
+
+  # Profile Service
+  profile-service:
+    build:
+      context: ./Profile-Service
+      dockerfile: Dockerfile
+    container_name: alphonso-profile-service
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/authd?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: rootpassword
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://service-registry:8761/eureka
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+      SPRING_PROFILES_ACTIVE: dev
+    networks:
+      - backend-network
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+      service-registry:
+        condition: service_healthy
+
+  # Moodle & Employer Service
+  moodle-service:
+    build:
+      context: "./Moodle&EmployerService"
+      dockerfile: Dockerfile
+    container_name: alphonso-moodle-service
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/moodle_service_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: rootpassword
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://service-registry:8761/eureka
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "true"
+      SPRING_PROFILES_ACTIVE: dev
+    networks:
+      - backend-network
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+      service-registry:
+        condition: service_healthy
+
+  # Interviewer Service
+  interviewer-service:
+    build:
+      context: ./Interviewer-Service
+      dockerfile: Dockerfile
+    container_name: alphonso-interviewer-service
+    ports:
+      - "8083:8083"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/Interviewer?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: rootpassword
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://service-registry:8761/eureka
+      EUREKA_INSTANCE_HOSTNAME: host.docker.internal
+      EUREKA_INSTANCE_PREFER_IP_ADDRESS: "false"
+      SPRING_PROFILES_ACTIVE: dev
+    networks:
+      - backend-network
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+      service-registry:
+        condition: service_healthy
+
+  # API Gateway - Should start last
+  api-gateway:
+    build:
+      context: ./Api-Gateway
+      dockerfile: Dockerfile
+    container_name: alphonso-api-gateway
+    ports:
+      - "9191:9191"
+    environment:
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://service-registry:8761/eureka
+      SPRING_PROFILES_ACTIVE: dev
+    networks:
+      - backend-network
+    restart: unless-stopped
+    depends_on:
+      service-registry:
+        condition: service_healthy
+      user-service:
+        condition: service_started
+      profile-service:
+        condition: service_started
+      moodle-service:
+        condition: service_started
+      interviewer-service:
+        condition: service_started
+
+volumes:
+  mysql_data:
+
+networks:
+  backend-network:
+    driver: bridge

@@ -9,7 +9,9 @@ import com.alphonso.profile_service.Exception.ProfileServiceException.UserNotFou
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.MissingRequestHeaderException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import com.alphonso.profile_service.ResponseDTO.ApiResponse;
@@ -28,6 +30,22 @@ public class GlobalExceptionHandler {
 
 		ApiResponse<?> response = ApiResponse.error(HttpStatus.BAD_REQUEST.value(), "Validation failed", errors);
 
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+	}
+
+	@ExceptionHandler(HttpMessageNotReadableException.class)
+	public ResponseEntity<ApiResponse<?>> handleMessageNotReadable(HttpMessageNotReadableException ex) {
+		log.warn("Invalid request body: {}", ex.getMessage());
+		String message = "Invalid request body. Ensure JSON is valid and includes required fields (e.g. email for send-otp).";
+		ApiResponse<?> response = ApiResponse.error(HttpStatus.BAD_REQUEST.value(), message, null);
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+	}
+
+	@ExceptionHandler(MissingRequestHeaderException.class)
+	public ResponseEntity<ApiResponse<?>> handleMissingHeader(MissingRequestHeaderException ex) {
+		log.warn("Missing required header: {}", ex.getMessage());
+		ApiResponse<?> response = ApiResponse.error(HttpStatus.BAD_REQUEST.value(),
+				"Missing required header: " + ex.getHeaderName(), null);
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
 	}
 
