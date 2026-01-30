@@ -21,11 +21,11 @@ public interface MoodleFeignClient {
 			@RequestParam("moodlewsrestformat") String format, @RequestParam("field") String field,
 			@RequestParam("value") String value);
 
-	@GetMapping
+	@GetMapping("/webservice/rest/server.php")
 	Object getAllCourses(@RequestParam("wstoken") String token, @RequestParam("wsfunction") String function,
 			@RequestParam("moodlewsrestformat") String format);
 
-	@GetMapping
+	@GetMapping("/webservice/rest/server.php")
 	Object getCategories(@RequestParam("wstoken") String token, @RequestParam("wsfunction") String function,
 			@RequestParam("moodlewsrestformat") String format);
 

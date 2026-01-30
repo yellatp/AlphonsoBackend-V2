@@ -26,7 +26,7 @@ task:
 
 # ✅ Moodle Configuration
 moodle:
-  base-url: http://54.243.88.200/webservice/rest/server.php
+  base-url: http://54.243.88.200
   token: 778c601fe5af8b2996b3109bd7927672
   format: json
   default-role-id: 5

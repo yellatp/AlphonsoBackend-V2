@@ -35,191 +35,97 @@
 
  :: Spring Boot ::                (v3.5.6)
 
-2026-01-28T01:37:32.492+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.a.s.ServiceRegisteryApplication        : Starting ServiceRegisteryApplication using Java 23.0.2 with PID 41094 (/Users/srinivas/Documents/chanduAnna/AlphonsoBackend-V2/Service-Registery/target/classes started by srinivas in /Users/srinivas/Documents/chanduAnna/AlphonsoBackend-V2/Service-Registery)
-2026-01-28T01:37:32.493+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.a.s.ServiceRegisteryApplication        : No active profile set, falling back to 1 default profile: "default"
-2026-01-28T01:37:32.538+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-01-28T01:37:32.538+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-01-28T01:37:33.025+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9e042406-b7c7-3c35-ad4c-0cf3c40054ee
-2026-01-28T01:37:33.206+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
-2026-01-28T01:37:33.214+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-01-28T01:37:33.214+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2026-01-28T01:37:33.232+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-01-28T01:37:33.232+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 694 ms
-2026-01-28T01:37:33.614+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2026-01-28T01:37:33.614+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2026-01-28T01:37:33.708+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2026-01-28T01:37:33.708+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2026-01-28T01:37:33.774+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-01-28T01:37:34.029+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-01-28T01:37:34.050+05:30  WARN 41094 --- [Service-Registery] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-01-28T01:37:34.058+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-01-28T01:37:34.067+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-01-28T01:37:34.067+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2026-01-28T01:37:34.068+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1769544454068 with initial instances count: 0
-2026-01-28T01:37:34.084+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2026-01-28T01:37:34.085+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
-2026-01-28T01:37:34.145+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2026-01-28T01:37:34.145+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2026-01-28T01:37:34.145+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2026-01-28T01:37:34.145+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2026-01-28T01:37:34.167+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
-2026-01-28T01:37:34.171+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2026-01-28T01:37:34.171+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2026-01-28T01:37:34.179+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-01-28T01:37:34.200+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-REGISTERY with eureka with status UP
-2026-01-28T01:37:34.206+05:30  INFO 41094 --- [Service-Registery] [      Thread-15] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2026-01-28T01:37:34.206+05:30  INFO 41094 --- [Service-Registery] [      Thread-15] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2026-01-28T01:37:34.206+05:30  INFO 41094 --- [Service-Registery] [      Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2026-01-28T01:37:34.206+05:30  INFO 41094 --- [Service-Registery] [      Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2026-01-28T01:37:34.206+05:30  INFO 41094 --- [Service-Registery] [      Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2026-01-28T01:37:34.207+05:30  INFO 41094 --- [Service-Registery] [      Thread-15] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2026-01-28T01:37:34.208+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
-2026-01-28T01:37:34.208+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
-2026-01-28T01:37:34.219+05:30  INFO 41094 --- [Service-Registery] [  restartedMain] c.a.s.ServiceRegisteryApplication        : Started ServiceRegisteryApplication in 1.937 seconds (process running for 2.244)
-2026-01-28T01:37:55.101+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-28T01:37:55.102+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-01-28T01:37:55.107+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2026-01-28T01:37:55.321+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/10.84.240.145:User-Service:8080 with status UP (replication=false)
-2026-01-28T01:37:55.921+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/10.84.240.145:User-Service:8080 with status UP (replication=true)
-2026-01-28T01:37:57.437+05:30  WARN 41094 --- [Service-Registery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: INTERVIEWER-SERVICE - 10.84.240.145:Interviewer-Service:8083
-2026-01-28T01:37:57.437+05:30  WARN 41094 --- [Service-Registery] [nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Renew): INTERVIEWER-SERVICE - 10.84.240.145:Interviewer-Service:8083
-2026-01-28T01:37:57.496+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status UP (replication=false)
-2026-01-28T01:37:58.013+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status UP (replication=true)
-2026-01-28T01:38:03.540+05:30  INFO 41094 --- [Service-Registery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/10.84.240.145:Profile-Service:8081 with status UP (replication=false)
-2026-01-28T01:38:04.054+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/10.84.240.145:Profile-Service:8081 with status UP (replication=true)
-2026-01-28T01:38:06.688+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MOODLE-SERVICE/10.84.240.145:moodle-service:8082 with status UP (replication=false)
-2026-01-28T01:38:07.204+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MOODLE-SERVICE/10.84.240.145:moodle-service:8082 with status UP (replication=true)
-2026-01-28T01:38:11.196+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status DOWN (replication=false)
-2026-01-28T01:38:11.200+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status DOWN (replication=false)
-2026-01-28T01:38:11.203+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 (replication=false)
-2026-01-28T01:38:11.716+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status DOWN (replication=true)
-2026-01-28T01:38:11.716+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 (replication=true)
-2026-01-28T01:38:23.114+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.84.240.145:api-gateway:9191 with status UP (replication=false)
-2026-01-28T01:38:23.630+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/10.84.240.145:api-gateway:9191 with status UP (replication=true)
-2026-01-28T01:38:27.506+05:30  WARN 41094 --- [Service-Registery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: INTERVIEWER-SERVICE - 10.84.240.145:Interviewer-Service:8083
-2026-01-28T01:38:27.507+05:30  WARN 41094 --- [Service-Registery] [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Renew): INTERVIEWER-SERVICE - 10.84.240.145:Interviewer-Service:8083
-2026-01-28T01:38:27.516+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status UP (replication=false)
-2026-01-28T01:38:28.027+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status UP (replication=true)
-2026-01-28T01:38:34.209+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-01-28T01:39:34.234+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 26ms
-2026-01-28T01:40:34.234+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T01:41:34.237+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T01:42:34.241+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T01:43:34.241+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T01:44:34.242+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T01:45:34.244+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T01:46:34.248+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T01:47:34.249+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T01:48:34.281+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T01:49:34.282+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-01-28T01:50:34.286+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T01:51:34.290+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T01:52:34.185+05:30  INFO 41094 --- [Service-Registery] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
-2026-01-28T01:52:34.291+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T01:53:34.292+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T01:54:34.293+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-01-28T01:55:34.297+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T01:56:34.299+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T01:57:34.301+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T01:58:34.301+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-01-28T01:59:34.303+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T02:00:34.305+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:01:34.308+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:02:34.309+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T02:03:34.349+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-01-28T02:04:34.361+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:05:34.362+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T02:06:34.366+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:07:34.219+05:30  INFO 41094 --- [Service-Registery] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
-2026-01-28T02:07:34.368+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:08:34.370+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-01-28T02:09:34.376+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:10:34.376+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T02:11:34.380+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T02:12:34.381+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T02:13:34.384+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:14:34.388+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:15:34.392+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:16:34.396+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T02:17:34.399+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:18:34.401+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:19:34.426+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:20:34.433+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:21:34.436+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:22:34.239+05:30  INFO 41094 --- [Service-Registery] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
-2026-01-28T02:22:34.436+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-01-28T02:23:34.445+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:24:34.445+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:25:34.452+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
-2026-01-28T02:26:34.457+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:27:34.459+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:28:34.457+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-01-28T02:29:34.464+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:30:34.467+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:31:34.469+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:32:34.470+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T02:33:34.520+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-01-28T02:34:34.474+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:35:34.503+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T02:36:34.496+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-01-28T02:37:34.396+05:30  INFO 41094 --- [Service-Registery] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
-2026-01-28T02:37:34.497+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T02:38:34.500+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:39:34.502+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:40:34.502+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T02:40:46.813+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/10.84.240.145:Profile-Service:8081 with status DOWN (replication=false)
-2026-01-28T02:40:47.333+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/10.84.240.145:Profile-Service:8081 with status DOWN (replication=true)
-2026-01-28T02:40:50.395+05:30  INFO 41094 --- [Service-Registery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PROFILE-SERVICE/10.84.240.145:Profile-Service:8081 (replication=false)
-2026-01-28T02:40:50.932+05:30  WARN 41094 --- [Service-Registery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PROFILE-SERVICE/10.84.240.145:Profile-Service:8081
-2026-01-28T02:40:50.939+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PROFILE-SERVICE - 10.84.240.145:Profile-Service:8081
-2026-01-28T02:40:50.948+05:30  WARN 41094 --- [Service-Registery] [get_localhost-6] c.n.eureka.cluster.ReplicationTask       : The replication of task PROFILE-SERVICE/10.84.240.145:Profile-Service:8081:Cancel@localhost failed with response code 404
-2026-01-28T02:40:50.953+05:30  WARN 41094 --- [Service-Registery] [get_localhost-6] c.netflix.eureka.cluster.PeerEurekaNode  : PROFILE-SERVICE/10.84.240.145:Profile-Service:8081:Cancel@localhost: missing entry.
-2026-01-28T02:40:55.243+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/10.84.240.145:Profile-Service:8081 with status UP (replication=false)
-2026-01-28T02:40:55.761+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/10.84.240.145:Profile-Service:8081 with status UP (replication=true)
-2026-01-28T02:41:34.506+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T02:42:00.340+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status DOWN (replication=false)
-2026-01-28T02:42:00.851+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status DOWN (replication=true)
-2026-01-28T02:42:03.381+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 (replication=false)
-2026-01-28T02:42:03.904+05:30  WARN 41094 --- [Service-Registery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083
-2026-01-28T02:42:03.905+05:30  INFO 41094 --- [Service-Registery] [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): INTERVIEWER-SERVICE - 10.84.240.145:Interviewer-Service:8083
-2026-01-28T02:42:03.907+05:30  WARN 41094 --- [Service-Registery] [et_localhost-15] c.n.eureka.cluster.ReplicationTask       : The replication of task INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083:Cancel@localhost failed with response code 404
-2026-01-28T02:42:03.908+05:30  WARN 41094 --- [Service-Registery] [et_localhost-15] c.netflix.eureka.cluster.PeerEurekaNode  : INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083:Cancel@localhost: missing entry.
-2026-01-28T02:42:06.862+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status UP (replication=false)
-2026-01-28T02:42:07.380+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status UP (replication=true)
-2026-01-28T02:42:34.510+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:43:34.510+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T02:44:34.516+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:45:34.519+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T02:45:46.990+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status DOWN (replication=false)
-2026-01-28T02:45:47.629+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status DOWN (replication=true)
-2026-01-28T02:45:50.422+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 (replication=false)
-2026-01-28T02:45:51.108+05:30  WARN 41094 --- [Service-Registery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083
-2026-01-28T02:45:51.110+05:30  INFO 41094 --- [Service-Registery] [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): INTERVIEWER-SERVICE - 10.84.240.145:Interviewer-Service:8083
-2026-01-28T02:45:51.154+05:30  WARN 41094 --- [Service-Registery] [get_localhost-6] c.n.eureka.cluster.ReplicationTask       : The replication of task INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083:Cancel@localhost failed with response code 404
-2026-01-28T02:45:51.160+05:30  WARN 41094 --- [Service-Registery] [get_localhost-6] c.netflix.eureka.cluster.PeerEurekaNode  : INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083:Cancel@localhost: missing entry.
-2026-01-28T02:46:05.593+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status UP (replication=false)
-2026-01-28T02:46:06.122+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status UP (replication=true)
-2026-01-28T02:46:34.521+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:46:56.032+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status DOWN (replication=false)
-2026-01-28T02:46:56.594+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status DOWN (replication=true)
-2026-01-28T02:46:59.235+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 (replication=false)
-2026-01-28T02:46:59.763+05:30  WARN 41094 --- [Service-Registery] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083
-2026-01-28T02:46:59.764+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): INTERVIEWER-SERVICE - 10.84.240.145:Interviewer-Service:8083
-2026-01-28T02:46:59.767+05:30  WARN 41094 --- [Service-Registery] [et_localhost-15] c.n.eureka.cluster.ReplicationTask       : The replication of task INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083:Cancel@localhost failed with response code 404
-2026-01-28T02:46:59.768+05:30  WARN 41094 --- [Service-Registery] [et_localhost-15] c.netflix.eureka.cluster.PeerEurekaNode  : INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083:Cancel@localhost: missing entry.
-2026-01-28T02:47:01.717+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status UP (replication=false)
-2026-01-28T02:47:02.236+05:30  INFO 41094 --- [Service-Registery] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/10.84.240.145:Interviewer-Service:8083 with status UP (replication=true)
-2026-01-28T02:47:34.522+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-01-28T02:48:34.525+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2026-01-28T02:49:34.526+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T02:50:34.551+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
-2026-01-28T02:51:34.555+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-01-28T02:52:34.249+05:30  INFO 41094 --- [Service-Registery] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
-2026-01-28T02:52:34.559+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
-2026-01-28T02:53:34.563+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T02:54:34.561+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-01-28T02:55:34.560+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2026-01-28T02:56:34.561+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2026-01-28T02:57:34.563+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
-2026-01-28T02:58:34.565+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2026-01-28T02:59:34.569+05:30  INFO 41094 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-01-29T23:27:50.623+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.a.s.ServiceRegisteryApplication        : Starting ServiceRegisteryApplication using Java 23.0.2 with PID 39120 (/Users/srinivas/Documents/chanduAnna/AlphonsoBackend-V2/Service-Registery/target/classes started by srinivas in /Users/srinivas/Documents/chanduAnna/AlphonsoBackend-V2/Service-Registery)
+2026-01-29T23:27:50.625+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.a.s.ServiceRegisteryApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-29T23:27:50.654+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-29T23:27:50.654+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-29T23:27:51.100+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9e042406-b7c7-3c35-ad4c-0cf3c40054ee
+2026-01-29T23:27:51.276+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-01-29T23:27:51.284+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-29T23:27:51.284+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-01-29T23:27:51.301+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-29T23:27:51.302+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 647 ms
+2026-01-29T23:27:51.677+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-01-29T23:27:51.678+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-01-29T23:27:51.780+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-01-29T23:27:51.780+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-01-29T23:27:51.846+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-29T23:27:52.117+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-01-29T23:27:52.144+05:30  WARN 39120 --- [Service-Registery] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-29T23:27:52.151+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-29T23:27:52.159+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-29T23:27:52.160+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-01-29T23:27:52.160+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1769709472160 with initial instances count: 0
+2026-01-29T23:27:52.176+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-01-29T23:27:52.177+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-01-29T23:27:52.233+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-01-29T23:27:52.233+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-01-29T23:27:52.233+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-01-29T23:27:52.233+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-01-29T23:27:52.255+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-01-29T23:27:52.262+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-01-29T23:27:52.262+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-01-29T23:27:52.268+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-01-29T23:27:52.295+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-REGISTERY with eureka with status UP
+2026-01-29T23:27:52.301+05:30  INFO 39120 --- [Service-Registery] [      Thread-15] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-01-29T23:27:52.301+05:30  INFO 39120 --- [Service-Registery] [      Thread-15] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-01-29T23:27:52.301+05:30  INFO 39120 --- [Service-Registery] [      Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-01-29T23:27:52.301+05:30  INFO 39120 --- [Service-Registery] [      Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-01-29T23:27:52.301+05:30  INFO 39120 --- [Service-Registery] [      Thread-15] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-01-29T23:27:52.302+05:30  INFO 39120 --- [Service-Registery] [      Thread-15] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-01-29T23:27:52.303+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2026-01-29T23:27:52.303+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-01-29T23:27:52.314+05:30  INFO 39120 --- [Service-Registery] [  restartedMain] c.a.s.ServiceRegisteryApplication        : Started ServiceRegisteryApplication in 1.881 seconds (process running for 2.198)
+2026-01-29T23:28:12.807+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-29T23:28:12.807+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-29T23:28:12.809+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-01-29T23:28:12.987+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/192.0.0.2:User-Service:8080 with status UP (replication=false)
+2026-01-29T23:28:13.565+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/192.0.0.2:User-Service:8080 with status UP (replication=true)
+2026-01-29T23:28:19.310+05:30  WARN 39120 --- [Service-Registery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - 192.0.0.2:api-gateway:9191
+2026-01-29T23:28:19.311+05:30  WARN 39120 --- [Service-Registery] [nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - 192.0.0.2:api-gateway:9191
+2026-01-29T23:28:19.411+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.0.0.2:api-gateway:9191 with status UP (replication=false)
+2026-01-29T23:28:19.918+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.0.0.2:api-gateway:9191 with status UP (replication=true)
+2026-01-29T23:28:21.104+05:30  INFO 39120 --- [Service-Registery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/192.0.0.2:Profile-Service:8081 with status UP (replication=false)
+2026-01-29T23:28:21.611+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/192.0.0.2:Profile-Service:8081 with status UP (replication=true)
+2026-01-29T23:28:24.219+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MOODLE-SERVICE/192.0.0.2:moodle-service:8082 with status UP (replication=false)
+2026-01-29T23:28:24.810+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MOODLE-SERVICE/192.0.0.2:moodle-service:8082 with status UP (replication=true)
+2026-01-29T23:28:30.041+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/192.0.0.2:Interviewer-Service:8083 with status UP (replication=false)
+2026-01-29T23:28:30.560+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INTERVIEWER-SERVICE/192.0.0.2:Interviewer-Service:8083 with status UP (replication=true)
+2026-01-29T23:28:41.991+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.0.0.2:api-gateway:9191 with status UP (replication=false)
+2026-01-29T23:28:42.059+05:30  INFO 39120 --- [Service-Registery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.0.0.2:api-gateway:9191 with status DOWN (replication=false)
+2026-01-29T23:28:42.063+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/192.0.0.2:api-gateway:9191 (replication=false)
+2026-01-29T23:28:42.578+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.0.0.2:api-gateway:9191 with status DOWN (replication=true)
+2026-01-29T23:28:42.579+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/192.0.0.2:api-gateway:9191 (replication=true)
+2026-01-29T23:28:49.427+05:30  WARN 39120 --- [Service-Registery] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - 192.0.0.2:api-gateway:9191
+2026-01-29T23:28:49.428+05:30  WARN 39120 --- [Service-Registery] [nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - 192.0.0.2:api-gateway:9191
+2026-01-29T23:28:49.442+05:30  INFO 39120 --- [Service-Registery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.0.0.2:api-gateway:9191 with status UP (replication=false)
+2026-01-29T23:28:49.963+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.0.0.2:api-gateway:9191 with status UP (replication=true)
+2026-01-29T23:28:52.310+05:30  INFO 39120 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-29T23:29:52.316+05:30  INFO 39120 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-01-29T23:30:52.319+05:30  INFO 39120 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-01-29T23:31:52.322+05:30  INFO 39120 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-01-29T23:32:52.324+05:30  INFO 39120 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-01-29T23:33:52.324+05:30  INFO 39120 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-01-29T23:34:38.552+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/192.0.0.2:Profile-Service:8081 with status DOWN (replication=false)
+2026-01-29T23:34:39.184+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/192.0.0.2:Profile-Service:8081 with status DOWN (replication=true)
+2026-01-29T23:34:42.151+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PROFILE-SERVICE/192.0.0.2:Profile-Service:8081 (replication=false)
+2026-01-29T23:34:42.670+05:30  WARN 39120 --- [Service-Registery] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: PROFILE-SERVICE/192.0.0.2:Profile-Service:8081
+2026-01-29T23:34:42.671+05:30  INFO 39120 --- [Service-Registery] [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): PROFILE-SERVICE - 192.0.0.2:Profile-Service:8081
+2026-01-29T23:34:42.673+05:30  WARN 39120 --- [Service-Registery] [get_localhost-6] c.n.eureka.cluster.ReplicationTask       : The replication of task PROFILE-SERVICE/192.0.0.2:Profile-Service:8081:Cancel@localhost failed with response code 404
+2026-01-29T23:34:42.674+05:30  WARN 39120 --- [Service-Registery] [get_localhost-6] c.netflix.eureka.cluster.PeerEurekaNode  : PROFILE-SERVICE/192.0.0.2:Profile-Service:8081:Cancel@localhost: missing entry.
+2026-01-29T23:34:45.600+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/192.0.0.2:Profile-Service:8081 with status UP (replication=false)
+2026-01-29T23:34:46.115+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/192.0.0.2:Profile-Service:8081 with status UP (replication=true)
+2026-01-29T23:34:52.326+05:30  INFO 39120 --- [Service-Registery] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-01-29T23:35:46.928+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PROFILE-SERVICE/192.0.0.2:Profile-Service:8081 with status DOWN (replication=false)
+2026-01-29T23:35:47.004+05:30  INFO 39120 --- [Service-Registery] [ionShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-REGISTERY with eureka with status DOWN
+2026-01-29T23:35:47.143+05:30  INFO 39120 --- [Service-Registery] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MOODLE-SERVICE/192.0.0.2:moodle-service:8082 with status DOWN (replication=false)
+2026-01-29T23:35:47.192+05:30  INFO 39120 --- [Service-Registery] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-29T23:35:47.217+05:30  INFO 39120 --- [Service-Registery] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-01-29T23:35:47.237+05:30  INFO 39120 --- [Service-Registery] [ionShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2026-01-29T23:35:47.237+05:30  INFO 39120 --- [Service-Registery] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-01-29T23:35:47.288+05:30  INFO 39120 --- [Service-Registery] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-01-29T23:35:47.288+05:30  INFO 39120 --- [Service-Registery] [ionShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2026-01-29T23:35:47.298+05:30  INFO 39120 --- [Service-Registery] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2026-01-29T23:35:47.298+05:30  INFO 39120 --- [Service-Registery] [ionShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2026-01-29T23:35:47.327+05:30  INFO 39120 --- [Service-Registery] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-01-29T23:35:47.327+05:30  INFO 39120 --- [Service-Registery] [ionShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

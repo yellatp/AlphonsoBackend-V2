@@ -56,5 +56,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
   instance:
-    prefer-ip-address: false  # Use hostname instead of IP to avoid wrong IP issues
-    hostname: localhost         # Explicitly set hostname
+    prefer-ip-address: true
